@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HelloWorldApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldApplication.class, args);
+        var context = SpringApplication.run(HelloWorldApplication.class, args);
+        var port = context.getEnvironment().getRequiredProperty("local.server.port");
+        System.out.println("\nOpen the greeting: http://localhost:" + port + "/greeting\n");
     }
 }
