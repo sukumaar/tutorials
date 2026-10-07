@@ -1,0 +1,85 @@
+# Markdown files beginning with an underscore, in any directory
+_*.md
+
+# Shared local configuration, logs, and editor files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Java: Maven, Gradle, and compiled artifacts
+target/
+.gradle/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+!gradle-wrapper.jar
+!maven-wrapper.jar
+
+# Python: bytecode, virtual environments, packaging, and test caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.Python
+dist/
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Go: compiled binaries, test executables, and coverage profiles
+bin/
+*.exe
+*.test
+*.out
+coverage.txt
+go.work
+go.work.sum
+
+# Node.js: dependencies, package-manager caches, and generated output
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+.pnp.*
+coverage/
+.nyc_output/
+.next/
+.nuxt/
+.output/
+.parcel-cache/
+*.tsbuildinfo
+
+# Rust: build output (target/ above also applies to Cargo)
+**/*.rs.bk
+
+# Docker: local overrides and runtime data
+# Keep Dockerfiles, shared Compose files, and .dockerignore tracked.
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+.docker-data/
+docker-data/
+
+# Keep dependency lockfiles tracked for reproducible tutorials.
